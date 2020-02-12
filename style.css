@@ -23,6 +23,18 @@ a, a:hover{
     color: #6C63FF !important;
     background: none !important;
 }
+
+.socialbtns .fa:hover{
+    color: #fff !important;
+}
+@media (max-width: 768px){
+    .desktop-logo{
+        display: none !important;
+    }
+    .page-footer{
+        text-align: center !important;
+    }
+}
     .owl-dots{
       text-align: center;
     }
@@ -68,7 +80,6 @@ a, a:hover{
       background-color: #000;
     }
     
-    @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans');
   
   
     

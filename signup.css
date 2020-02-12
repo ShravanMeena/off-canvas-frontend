@@ -7,7 +7,6 @@
     border-color: #6C63FF;
 }
 .form-control, .btn {
-    border-radius: 50px;
     outline: none !important;
 }
 .signup-form {
