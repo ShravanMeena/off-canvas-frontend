@@ -31,11 +31,11 @@ a, a:hover{
     text-align: center;
   }
  .card-body a i{
+  display: inline-block;
+  width: 100%;
    font-size: 100px;
    text-align: center !important;
    color: #2431ac;
-   justify-content: center;
-   margin-left:30%;
  }
 
  @media (max-width: 768px){
