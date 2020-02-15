@@ -38,12 +38,7 @@ a, a:hover{
    color: #2431ac;
  }
 
- @media (max-width: 768px){
-  .card-body a i{
-    margin-left:40%;
 
-   }
- }
 
  .card{
    border: none;
