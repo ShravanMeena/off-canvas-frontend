@@ -38,6 +38,15 @@ a, a:hover{
    color: #2431ac;
  }
 
+@media (max-width: 768px){
+      .card-body a i{
+       display: inline-block;
+       width: 100%;
+       font-size: 100px;
+       text-align: center !important;
+       color: #2431ac;
+ }
+
  .card{
    border: none;
  }
