@@ -22,18 +22,16 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
   <link rel="stylesheet" href="style.css">
   
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
 <style>
-  .card-publications{
-    padding: 40px;
-    text-align: center;
-    background: #6C63FF;
-    color: #ffffff;
-  }
+
 
 </style>
 </head>
@@ -101,55 +99,60 @@
 
       <div class="container-fluid mt-3">
        
+        
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb shadow-lg">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="resources.html">Resources</a></li>
+                  <li class="breadcrumb-item"><a href="images.html">Images</a></li>
+                  <li class="breadcrumb-item active">Showing Gallery</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
 
 
+        <section>	
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-4 mb-3">
+                        <a href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="gallery" data-title="Cisco">
+                            <img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" class="img-fluid img-thumbnail" alt="Cisco">
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3">	
+                        <a href="https://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="gallery" data-title="Almost black metal forest">
+                            <img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" class="img-fluid img-thumbnail" alt="Almost black metal forest">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="gallery" data-title="Unnamed road to nowhere">
+                            <img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" class="img-fluid img-thumbnail" alt="Unnamed road to nowhere">
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <a href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="gallery" data-title="Cisco">
+                            <img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" class="img-fluid img-thumbnail" alt="Cisco">
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3">	
+                        <a href="https://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="gallery" data-title="Almost black metal forest">
+                            <img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" class="img-fluid img-thumbnail" alt="Almost black metal forest">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="gallery" data-title="Unnamed road to nowhere">
+                            <img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" class="img-fluid img-thumbnail" alt="Unnamed road to nowhere">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
 
 
-
-<!--Publication section now start-->
-
-<div class="container-fluid" style="margin: 0px 0px 50px 0px; padding:10px;">
-  <div class="row">
-    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-      <nav aria-label="breadcrumb ">
-        <ol class="breadcrumb shadow-lg">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Publications</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-  
-  <div class="row"  >
-    <div class="col-md-4 col-lg-4 col-sm-2 col-xs-12">
-      <div class="card shadow-lg card-publications">
-        <div class="card-body">
-          <h5 class="card-title"><a href="module1.html">Module 1</a> </h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-4 col-sm-2 col-xs-12">
-      <div class="card shadow-lg card-publications">
-        <div class="card-body">
-          <h5 class="card-title"><a href="module1.html">Module 2</a> </h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-4 col-sm-2 col-xs-12">
-      <div class="card shadow-lg card-publications">
-        <div class="card-body">
-          <h5 class="card-title"><a href="module1.html">Module 3</a></h5>
-        </div>
-      </div>
-    </div>
-    
-  
-  </div>
-  
-  </div>
-  
-  
-  <!--Publication section end-->
 
 
 
@@ -316,7 +319,14 @@
     <script>
       AOS.init();
     </script>
-
+<script>
+    lightbox.option({
+        'albumLabel':	"picture %1 of %2",
+        'fadeDuration': 300,
+        'resizeDuration': 150,
+        'wrapAround': true
+    })
+</script>
 </body>
 
 </html>

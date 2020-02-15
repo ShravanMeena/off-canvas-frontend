@@ -22,15 +22,14 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="style.css">
   
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
 <style>
 
-  
+
 </style>
 </head>
 
@@ -40,8 +39,17 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading"> PRAKARSHR </div>
-       <div class="list-group list-group-flush sticky-top">
+      <div class="sidebar-heading"> 
+        <span style="color: #6C63FF;">P</span>
+            <span style="color: #2431ac;">R</span>
+            <span style="color: rgb(255, 99, 151);">A</span>
+            <span style="color: rgb(8, 153, 51);">K</span>
+            <span style="color: rgb(255, 99, 99);">A</span>
+            <span style="color: rgb(14, 148, 126);">S</span>
+            <span style="color: rgb(58, 21, 49);">H</span>
+            <span style="color: rgb(160, 132, 107);">R</span>  
+      </div>
+      <div class="list-group list-group-flush sticky-top">
         <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
         <a href="publications.html" class="list-group-item list-group-item-action bg-light">Publications</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Links</a>
@@ -51,24 +59,20 @@
         <a href="contacts.html" class="list-group-item list-group-item-action bg-light">Contacts</a>
       </div>
     </div>
-    </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top">
-        <button class="btn" id="menu-toggle"><i class="fa fa-bars" style="font-size:30px"></i> </button>
-
-       
-
-        <div>
-          <ul class="nav mr-auto mt-2 mt-lg-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top" >
+        <button class="btn " id="menu-toggle"><i class="fa fa-bars" style="font-size:30px"></i> </button>
+        <div class="mr-auto">
+          <ul class="nav mt-2 mt-lg-0" style="">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contacts.html">Contact Us</a>
+              <a class="nav-link" href="contacts.html">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="signup.html">Register</a>
@@ -78,12 +82,32 @@
             </li>
           </ul>
         </div>
+          <a class="desktop-logo" style="padding: 20px; font-size:18px; font-weight:600"  href="/">
+            <span style="color: #6C63FF;">P</span>
+            <span style="color: #2431ac;">R</span>
+            <span style="color: rgb(255, 99, 151);">A</span>
+            <span style="color: rgb(8, 153, 51);">K</span>
+            <span style="color: rgb(255, 99, 99);">A</span>
+            <span style="color: rgb(14, 148, 126);">S</span>
+            <span style="color: rgb(58, 21, 49);">H</span>
+            <span style="color: rgb(160, 132, 107);">R</span>
+          </a>
       </nav>
 
-      <!--Everything inside this div-->
       <div class="container-fluid mt-3">
-    
-<!--Code goes here-->
+       
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!---touch bhi na krna-->
@@ -210,6 +234,24 @@
 
 
 
+    <script>
+      $('.brand-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:3
+          },
+          1000:{
+            items:5
+          }
+        }
+      })
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -28,12 +28,32 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
 <style>
-  .card-publications{
-    padding: 40px;
-    text-align: center;
-    background: #6C63FF;
-    color: #ffffff;
-  }
+.module-btn a{
+    font-size: 14px;
+    border-radius: 1px;
+    border: 2px solid #2431ac;
+    padding: 10px;
+    margin: 25px;
+    transition: .3s ease-in;
+}
+.module-btn a:hover{
+    color: #fff !important;
+    background: #2431ac;
+}
+.dropdown-toggle{
+    background: #2431ac;
+    border: none;
+}
+.dropdown-toggle:hover{
+    background: #2431ac;
+    border: none !important;
+    outline: none !important;
+}
+.dropdown-toggle:focus{
+    background: #2431ac !important;
+    border: none !important;
+    outline: none !important;
+}
 
 </style>
 </head>
@@ -101,56 +121,88 @@
 
       <div class="container-fluid mt-3">
        
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb shadow">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="publications.html">Publications</a></li>
+                  <li class="breadcrumb-item"><a href="module1.html">Module 1</a></li>
+                  <li class="breadcrumb-item active">Module 1: Curriculum</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
 
-
-
-
-
-<!--Publication section now start-->
-
-<div class="container-fluid" style="margin: 0px 0px 50px 0px; padding:10px;">
-  <div class="row">
-    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-      <nav aria-label="breadcrumb ">
-        <ol class="breadcrumb shadow-lg">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Publications</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-  
-  <div class="row"  >
-    <div class="col-md-4 col-lg-4 col-sm-2 col-xs-12">
-      <div class="card shadow-lg card-publications">
-        <div class="card-body">
-          <h5 class="card-title"><a href="module1.html">Module 1</a> </h5>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="card shadow bg-light">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-4 col-sm-2 col-xs-12">
-      <div class="card shadow-lg card-publications">
-        <div class="card-body">
-          <h5 class="card-title"><a href="module1.html">Module 2</a> </h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-4 col-sm-2 col-xs-12">
-      <div class="card shadow-lg card-publications">
-        <div class="card-body">
-          <h5 class="card-title"><a href="module1.html">Module 3</a></h5>
-        </div>
-      </div>
-    </div>
-    
-  
-  </div>
-  
-  </div>
-  
-  
-  <!--Publication section end-->
 
+        <div class="container-fluid bg-light shadow-lg">
+            <div class="row p-4">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div >
+                          <p> Learning Objectives  </p>
+                          <p>This module will help teachers to:</p>
+                          <p>Lorem ipsum abo rem corporis! Sapiente consequatur iure apti doloribus voluptatibus aperiam? Alias quidem molestiae amet id, expedita in cum dicta sapiente atque. </p>
+                          <p>Lorem ipsum abo rem corporis! Sapiente consequatur iure adipisci minima corrupti doloribus voluptatibus aperiam? Alias quidem molestiae amet id, expedita in cum dicta sapiente atque. </p>
+                        </div>
+                </div>
+            <div class="row module-btn" style="text-align:center; ">
+                <a href="#" class="shadow-lg">View The Video</a>
+                <a href="#" class="shadow-lg">Download Text Module (English)</a>
+                <a href="#" class="shadow-lg">Download Text Module (Hindi)</a>
+                <a href="#" class="shadow-lg">Discussion Form</a>
+                <a href="#" class="shadow-lg">PPT | PDF</a>
+            </div>
+            </div>
+            <div class="row" style="padding: 30px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <nav  aria-label="Page navigation example " class="justify-content-center" > 
+                        <ul class="pagination pg-blue" >
+                          <li class="page-item disabled">
+                            <a class="page-link" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link">1</a></li>
+                          <li class="page-item active">
+                            <a class="page-link">2 <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="page-item"><a class="page-link">3</a></li>
+                          <li class="page-item"><a class="page-link">4</a></li>
+                          <li class="page-item"><a class="page-link">5</a></li>
+                          <li class="page-item">
+                            <a class="page-link">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="col-md-6" > 
+                    <div class="dropdown" style="float: right !important;">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
 
 
 
