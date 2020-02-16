@@ -38,19 +38,38 @@ a, a:hover{
    color: #2431ac;
  }
 
-@media (max-width: 768px){
-      .card-body a i{
-       display: inline-block;
-       width: 100%;
-       font-size: 100px;
-       text-align: center !important;
-       color: #2431ac;
+ .card-title{
+   letter-spacing: 1.2px;
+   font-size: 18px;
  }
-
+ .card-btn{
+   padding: 10px;
+   color: #000;
+ }
+ .display-4{
+   font-size: 22px;
+   font-weight: 600;
+   letter-spacing: 1.1px;
+ }
+ .lead{
+   font-size: 16px;
+ }
+ .card-btn:hover{
+   background: #2431ac;
+   color: #fff !important;
+ }
+ .margin-top{
+   margin-top: 80px;
+ }
  .card{
    border: none;
  }
-
+ .brand-carousel {
+   padding: 50px;
+ }
+ .single-logo{
+   padding: 20px;
+ }
 .socialbtns .fa:hover{
     color: #fff !important;
 }
@@ -131,7 +150,7 @@ a, a:hover{
     }
     
     .service {
-      background: #fff;
+      background: none;
       margin: 20px;
       padding: 20px;
       border-radius: 4px;
