@@ -38,6 +38,9 @@ a, a:hover{
    color: #2431ac;
  }
 
+ .middle-bar img{
+   padding: 80px;
+ }
  .card-title{
    letter-spacing: 1.2px;
    font-size: 18px;
