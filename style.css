@@ -15,6 +15,9 @@ a, a:hover{
 .card-image{
     color: #000 !important;
   }
+ .date-time-style{
+   margin-top: 20px !important;
+ }
    .fa-bars{
        border: none !important;
        color: #6C63FF !important;
@@ -22,6 +25,14 @@ a, a:hover{
    .fa-bars:hover{
     color: #6C63FF !important;
     background: none !important;
+}
+.carousel-item img{
+  height: 421px !important;
+}
+@media (max-width: 768px){
+  .carousel-item img{
+    height: 180px !important;
+  }
 }
 .card{
   background: none !important;

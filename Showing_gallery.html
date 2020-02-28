@@ -43,18 +43,16 @@
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading"> 
-        <span style="color: #6C63FF;">P</span>
-            <span style="color: #2431ac;">R</span>
-            <span style="color: rgb(255, 99, 151);">A</span>
-            <span style="color: rgb(8, 153, 51);">K</span>
-            <span style="color: rgb(255, 99, 99);">A</span>
-            <span style="color: rgb(14, 148, 126);">S</span>
-            <span style="color: rgb(58, 21, 49);">H</span>
-            <span style="color: rgb(160, 132, 107);">R</span>  
+        <a href="index.html">
+        <img src="img/FINAL LOGO CEES 1.png" style="margin-left:50px; height: 100px; width:100px">
+        </a>
       </div>
       <div class="list-group list-group-flush sticky-top">
-        <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="index.html" class="list-group-item list-group-item-action bg-light"> Home</a>
         <a href="publications.html" class="list-group-item list-group-item-action bg-light">Publications</a>
+        <a href="aboutus.html" class="list-group-item list-group-item-action bg-light">About Us</a>
+        <a href="gallery.html" class="list-group-item list-group-item-action bg-light">Gallery</a>
+        <a href="media.html" class="list-group-item list-group-item-action bg-light">Media</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Links</a>
         <a href="news.html" class="list-group-item list-group-item-action bg-light">News</a>
         <a href="resources.html" class="list-group-item list-group-item-action bg-light">Resources</a>
@@ -66,11 +64,48 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
+      
+      <div class="top-bar" style="padding: 10px 30px 0px 30px; height:84px">
+        <ul class="nav mt-2 mt-lg-0">
+          <li class="nav-item date-time-style" >
+            <script type="text/javascript">
+              document.write ('<p> <span id="date-time">', new Date().toLocaleString(), '<\/span><\/p>')
+              if (document.getElementById) onload = function () {
+                setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+              }
+              </script>          
+            </li>
+            <li class="nav-item ml-auto" style="margin-right: 0px !important;">
+              <div id="google_translate_element"></div>
+            </li>
+          <!-- <li class="nav-item ml-auto" >
+            <a href="index.html">
+              <img src="img/FINAL LOGO CEES 1.png" style="margin-left:50px; height: 100px; width:100px">
+              </a>          
+            </li> -->
+        </ul>      
+      </div>
+      <hr style="margin-top: 10px;">
+
+      <!-- <div class="middle-bar">
+        <div class="row">
+          <div class="col-md-4">
+         <img src="img/FINAL LOGO CEES 1.png" width="100%">
+          </div>
+          <div class="col-md-4">
+            <img src="img/FINAL LOGO CEES 1.png" width="100%">
+          </div>
+             <div class="col-md-4">
+              <img src="img/FINAL LOGO CEES 1.png" width="100%">
+            </div>
+        </div>
+      </div>
+<hr> -->
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top" >
         <button class="btn " id="menu-toggle"><i class="fa fa-bars" style="font-size:30px"></i> </button>
         <div class="mr-auto">
-          <ul class="nav mt-2 mt-lg-0" >
+          <ul class="nav mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -85,18 +120,7 @@
             </li>
           </ul>
         </div>
-          <a class="desktop-logo" style="padding: 20px; font-size:18px; font-weight:600"  href="/">
-            <span style="color: #6C63FF;">P</span>
-            <span style="color: #2431ac;">R</span>
-            <span style="color: rgb(255, 99, 151);">A</span>
-            <span style="color: rgb(8, 153, 51);">K</span>
-            <span style="color: rgb(255, 99, 99);">A</span>
-            <span style="color: rgb(14, 148, 126);">S</span>
-            <span style="color: rgb(58, 21, 49);">H</span>
-            <span style="color: rgb(160, 132, 107);">R</span>
-          </a>
       </nav>
-
       <div class="container-fluid mt-3">
        
         
@@ -219,26 +243,20 @@
 
       <hr class="clearfix w-100 d-md-none pb-3">
 
-      <!-- Grid column -->
+     <!-- Grid column -->
       <div class="col-md-4 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+        <h5 class="text-uppercase">Newslater</h5>
+        <form class="form-inline mt-4">
+         
+          <div class="form-group mb-2 ">
+            <input type="email" class="form-control" id="inputPassword2" placeholder="Enter Your Email">
+          </div>
 
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
+          <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+        </form>
+       
 
       </div>
       <!-- Grid column -->
@@ -319,6 +337,14 @@
     <script>
       AOS.init();
     </script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+      </script>
 <script>
     lightbox.option({
         'albumLabel':	"picture %1 of %2",
