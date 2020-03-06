@@ -37,6 +37,12 @@ a, a:hover{
 .card{
   background: none !important;
 }
+
+.overlay img{
+  /* width: 500px; */
+  height: 180px;
+}
+
 .card-body a{
     font-size: 16px;
     text-align: center;
